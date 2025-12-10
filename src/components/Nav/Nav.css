@@ -1,0 +1,115 @@
+nav{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+nav ul a.active
+{
+  color: rgb(107, 211, 211);
+  border-bottom: 2px solid white;
+}
+/* agar link tag me css add karni hai tho achor tag ki help se karte hai because html vo as achor tag hota hai */
+nav ul a{
+  cursor: pointer;
+}
+nav ul a:hover{
+  color: rgb(107, 211, 211);
+  border-bottom: 2px solid white;
+}
+ul{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+nav h1{
+  font-size: 30px;
+  background: linear-gradient(to right,rgb(66, 180, 205),white);
+  background-clip: text;
+  color: transparent;
+}
+.hamburger
+{
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: none;
+}
+.ham
+{
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s
+}
+
+.mobilemenu
+{
+position: absolute;
+top: 80px;
+width: 100%;
+height: 100vh;
+background-color: rgb(17, 20, 23,0.476);
+backdrop-filter: blur(7px) ;
+right: 0;
+transform: translateX(100%);
+display: flex;
+flex-direction: column;
+transition: 0.5s;
+gap: 10px;
+}
+.activemobile
+{
+  transform: translateX(0%);
+}
+.activeham .ham:nth-child(1)
+{
+transform: rotate(45deg);
+position: relative;
+top: 8px;
+}
+.activeham .ham:nth-child(2)
+{
+opacity:0;
+}
+.activeham .ham:nth-child(3)
+{
+transform: rotate(-45deg);
+position: relative;
+top: -12px;
+}
+.hamburger .ham {
+  transform-origin: center;
+}
+@media (max-width:750px) {
+  @media (max-width:750px) {
+  .mobilemenu {
+    gap: 20px;             /* items ke beech thoda spacing */
+    height: auto;          /* full height hatadi */
+    padding: 30px 0;       /* thoda niche aur upar margin */
+  }
+
+  .mobilemenu li {
+    padding: 8px 0;        /* text ke around spacing */
+  }
+}
+
+  .desktopmenu
+  {
+    display: none;
+  }
+  .hamburger
+  {
+    display:flex ;
+  }
+}
