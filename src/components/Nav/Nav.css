@@ -7,21 +7,31 @@ nav{
   padding: 20px;
   position: fixed;
   top: 0;
+  z-index: 20;
+  background-color: rgb(17, 20, 23);
+
 }
+
 nav ul a.active
 {
   color: rgb(107, 211, 211);
   border-bottom: 2px solid white;
 }
 /* agar link tag me css add karni hai tho achor tag ki help se karte hai because html vo as achor tag hota hai */
-nav ul a{
+
+nav ul a
+{
   cursor: pointer;
 }
-nav ul a:hover{
+
+nav ul a:hover
+{
   color: rgb(107, 211, 211);
   border-bottom: 2px solid white;
 }
-ul{
+
+nav ul
+{
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -30,12 +40,14 @@ ul{
   gap: 25px;
   list-style: none;
 }
-nav h1{
+nav h1
+{
   font-size: 30px;
   background: linear-gradient(to right,rgb(66, 180, 205),white);
   background-clip: text;
   color: transparent;
 }
+
 .hamburger
 {
   /* display: flex; */
@@ -44,7 +56,9 @@ nav h1{
   justify-content: center;
   gap: 8px;
   display: none;
+  transition: all 0.5s;
 }
+
 .ham
 {
   width: 40px;
@@ -68,6 +82,7 @@ flex-direction: column;
 transition: 0.5s;
 gap: 10px;
 }
+
 .activemobile
 {
   transform: translateX(0%);
@@ -91,6 +106,7 @@ top: -12px;
 .hamburger .ham {
   transform-origin: center;
 }
+
 @media (max-width:750px) {
   @media (max-width:750px) {
   .mobilemenu {
@@ -103,7 +119,6 @@ top: -12px;
     padding: 8px 0;        /* text ke around spacing */
   }
 }
-
   .desktopmenu
   {
     display: none;

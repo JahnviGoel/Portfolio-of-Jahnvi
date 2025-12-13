@@ -1,6 +1,6 @@
-import About from './components/About/About'
-import Home from './components/Home/Home'
-import Nav from './components/Nav/Nav'
+import About from './components/About/About.jsx'
+import Home from './components/Home(1)/Home.jsx'
+import Nav from './components/Nav/Nav.jsx'
 
 function App() {
   return (
