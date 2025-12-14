@@ -18,7 +18,7 @@ function Nav() {
       <ul className='desktopmenu'>
         <Link to="home" activeClass='active' spy={true} smooth={true} duration={500}><li>Home</li></Link>
         <Link to="about" activeClass='active' spy={true} smooth={true} duration={500}><li>About</li></Link>
-        <Link to="project" activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link>
+        <Link to="projects" activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link>
         <Link to="contact" activeClass='active' spy={true} smooth={true} duration={500}><li>Contacts</li></Link>
       </ul>
 
@@ -34,7 +34,7 @@ function Nav() {
       <ul className='mobilemenu' ref={mobile}>
         <Link to="home" onClick={closeMenu} activeClass='active' spy={true} smooth={true} duration={500}><li>Home</li></Link>
         <Link to="about" onClick={closeMenu} activeClass='active' spy={true} smooth={true} duration={500}><li>About</li></Link>
-        <Link to="project" onClick={closeMenu} activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link>
+        <Link to="projects" onClick={closeMenu} activeClass='active' spy={true} smooth={true} duration={500}><li>Projects</li></Link>
         <Link to="contact" onClick={closeMenu} activeClass='active' spy={true} smooth={true} duration={500}><li>Contacts</li></Link>
       </ul>
     </nav>
