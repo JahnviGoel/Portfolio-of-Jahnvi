@@ -57,6 +57,7 @@ nav h1
   gap: 8px;
   display: none;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .ham
